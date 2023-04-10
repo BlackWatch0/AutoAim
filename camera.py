@@ -1,5 +1,6 @@
 # 用户可自定义调用前缀，样例中使用了 gx
 import gxipy as gx
+from PIL import Image
 import sys
 # 枚举设备。dev_info_list 是设备信息列表，列表的元素个数为枚举到的设备个数，列表元素是字
 # 典，其中包含设备索引（index）、ip 信息（ip）等设备信息
