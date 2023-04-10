@@ -22,6 +22,20 @@ cam.stream_on()
 # int_channel_num = cam.get_stream_channel_num()
 # 获取数据
 # num 为采集图片次数
+
+#获取当前图像宽度
+int_Width_value = cam.Width.get()
+print(int_Width_value+"\n")
+
+#获取曝光值范围和当前曝光值
+float_range = cam.ExposureTime.get_range()
+float_max = float_range["max"]
+print(float_range+'\n')
+
+#设置曝光时间
+#cam.ExposureTime.set(10.0)
+
+
 num = 1
 for i in range(num):
     # 从第 0 个流通道获取一幅图像
