@@ -25,12 +25,14 @@ cam.stream_on()
 
 #获取当前图像宽度
 int_Width_value = cam.Width.get()
-print(int_Width_value+"\n")
+print(int_Width_value)
+print("\n")
 
 #获取曝光值范围和当前曝光值
 float_range = cam.ExposureTime.get_range()
 float_max = float_range["max"]
-print(float_range+'\n')
+print(float_range)
+print("\n")
 
 #设置曝光时间
 #cam.ExposureTime.set(10.0)
